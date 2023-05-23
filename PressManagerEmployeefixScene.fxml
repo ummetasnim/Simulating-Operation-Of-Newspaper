@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="685.0" prefWidth="903.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="simulatingnewspaper.PressManagerEmployeefixSceneController">
+   <children>
+      <TextField fx:id="salaryTextField" layoutX="415.0" layoutY="158.0" onMouseClicked="#salaryOnMouseClick" prefHeight="26.0" prefWidth="162.0" promptText="Salary" />
+      <TextField fx:id="firstNameTextField" layoutX="40.0" layoutY="102.0" onMouseClicked="#fstnameOnMouseClick" prefHeight="26.0" prefWidth="150.0" promptText="First name" />
+      <TextField fx:id="designationTextField" layoutX="414.0" layoutY="101.0" onMouseClicked="#designationOnMouseClick" prefHeight="26.0" prefWidth="162.0" promptText="Designation" />
+      <TextField fx:id="contactnumTextField" layoutX="40.0" layoutY="158.0" onMouseClicked="#contactnoOnMouseClick" prefHeight="26.0" prefWidth="150.0" promptText="Contact Number" />
+      <Button layoutX="307.0" layoutY="227.0" mnemonicParsing="false" onAction="#deleteEmployeeOnClickactn" prefHeight="26.0" prefWidth="228.0" text="Delete Employee to list" textFill="#631b1b" />
+      <Button layoutX="40.0" layoutY="227.0" mnemonicParsing="false" onAction="#addEmployeeOnClickactn" prefHeight="26.0" prefWidth="228.0" text="Add Employee to list" textFill="#661212" />
+      <TableView fx:id="tableView" layoutX="40.0" layoutY="290.0" prefHeight="329.0" prefWidth="762.0">
+        <columns>
+          <TableColumn fx:id="firstNameColumn" prefWidth="88.80002212524414" text="First Name" />
+          <TableColumn fx:id="lastNameColumn" prefWidth="103.19998168945312" text="Last Name" />
+            <TableColumn fx:id="designationColumn" prefWidth="120.79997253417969" text="Designation" />
+            <TableColumn fx:id="dateoOfJoiningcolumn" prefWidth="105.60003662109375" text="Date of Joining" />
+            <TableColumn fx:id="contactNoColumn" prefWidth="113.5999755859375" text="Contact Number" />
+            <TableColumn fx:id="workfFxColumn" prefWidth="112.0" text="Work Schedule" />
+            <TableColumn fx:id="salaryColumn" prefWidth="124.0" text="Salary" />
+        </columns>
+      </TableView>
+      <TextField fx:id="lastNameTextField" layoutX="233.0" layoutY="102.0" onMouseClicked="#lastnameOnMouseClick" prefHeight="26.0" prefWidth="140.0" promptText="Last name" />
+      <TextField fx:id="workscheduleTextField" layoutX="233.0" layoutY="158.0" onMouseClicked="#workscheduleOnMouseClick" prefHeight="26.0" prefWidth="140.0" promptText="Work schedule" />
+      <Label layoutX="40.0" layoutY="21.0" prefHeight="61.0" prefWidth="449.0" text="Fill the box to add employees information :" textFill="#691515">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Button layoutX="711.0" layoutY="638.0" mnemonicParsing="false" onAction="#prevSceneclickOnAction" prefHeight="26.0" prefWidth="90.0" text="Prev Scene" />
+      <DatePicker fx:id="dojDatePicker" layoutX="600.0" layoutY="102.0" onMouseClicked="#dojOnMouseclick" prefHeight="26.0" prefWidth="186.0" promptText="Date of Joining" />
+   </children>
+</AnchorPane>

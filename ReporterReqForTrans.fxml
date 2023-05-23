@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="565.0" prefWidth="706.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="simulatingnewspaper.ReporterReqForTransController">
+   <children>
+      <TextField fx:id="nametextfield" layoutX="66.0" layoutY="216.0" prefHeight="34.0" prefWidth="169.0" promptText="Name" />
+      <TextField fx:id="numbOfpeopletxtfld" layoutX="263.0" layoutY="273.0" prefHeight="34.0" prefWidth="180.0" promptText="Numb of people" />
+      <TextField fx:id="noofvehicletxtfld" layoutX="466.0" layoutY="273.0" prefHeight="34.0" prefWidth="186.0" promptText="Numb of Vechile" />
+      <TextArea fx:id="pressMrplytxtarea" editable="false" layoutX="66.0" layoutY="429.0" prefHeight="102.0" prefWidth="590.0" style="-fx-background-color: Cyan;" />
+      <Button fx:id="sendtoPressMBtn" layoutX="147.0" layoutY="323.0" mnemonicParsing="false" onAction="#senttoPressMclickOnActn" prefHeight="26.0" prefWidth="186.0" text="Send to Press Manager" textFill="#4e1313" />
+      <Button layoutX="380.0" layoutY="323.0" mnemonicParsing="false" onAction="#prevSceneclckonactn" prefHeight="26.0" prefWidth="170.0" text="Prev Scene" textFill="#6b1b1b" />
+      <TextField fx:id="tyimingtextfield" layoutX="263.0" layoutY="216.0" prefHeight="34.0" prefWidth="180.0" promptText="Tyming" />
+      <DatePicker fx:id="datetextfield" layoutX="466.0" layoutY="216.0" prefHeight="34.0" prefWidth="186.0" promptText="Date" />
+      <TextField fx:id="placetextfield" layoutX="66.0" layoutY="273.0" prefHeight="34.0" prefWidth="170.0" promptText="place" />
+      <Label layoutX="66.0" layoutY="383.0" prefHeight="18.0" prefWidth="170.0" text="Reply From Press Manager :" textFill="#6e1717" />
+      <Label layoutX="64.0" layoutY="33.0" prefHeight="26.0" prefWidth="142.0" text="Message From Ceo : " textFill="#6b1717" />
+      <Button fx:id="showceomssgbtn" layoutX="218.0" layoutY="33.0" mnemonicParsing="false" onAction="#showceomssgButtonOnClck" prefHeight="18.0" prefWidth="72.0" text="Show" textFill="#691b1b" />
+      <TextArea fx:id="showCeotxtarea" editable="false" layoutX="66.0" layoutY="81.0" prefHeight="93.0" prefWidth="590.0" style="-fx-background-color: cyan;" />
+      <Button fx:id="showpressmmssgbtn" layoutX="240.0" layoutY="379.0" mnemonicParsing="false" onAction="#showpressMmssgButtonOnClck" prefHeight="18.0" prefWidth="72.0" text="Show" textFill="#691b1b" />
+   </children>
+</AnchorPane>

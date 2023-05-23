@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="simulatingnewspaper.MainSceneController">
+   <children>
+      <Label layoutX="124.0" layoutY="103.0" prefHeight="26.0" prefWidth="71.0" text="Id : " textFill="#561414">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="124.0" layoutY="174.0" text="Password :" textFill="#480c0c" />
+      <Label layoutX="124.0" layoutY="26.0" prefHeight="46.0" prefWidth="425.0" text="Simulating Operations Of Newspaper" textFill="#560a0a">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <TextField fx:id="idfield" layoutX="207.0" layoutY="103.0" onAction="#idfieldOnActn" prefHeight="26.0" prefWidth="200.0" promptText="Enter your id" />
+      <ComboBox fx:id="type" layoutX="194.0" layoutY="235.0" prefHeight="26.0" prefWidth="222.0" promptText="Select Your Type" />
+      <Button fx:id="login" layoutX="134.0" layoutY="296.0" mnemonicParsing="false" onAction="#loginOnActn" prefHeight="26.0" prefWidth="146.0" text="Login" textFill="#691313" />
+      <Button fx:id="SignUp" layoutX="316.0" layoutY="296.0" mnemonicParsing="false" onAction="#SignUpOnActn" prefHeight="26.0" prefWidth="136.0" text="Sign Up" textFill="#6e1616" />
+      <Label fx:id="incorrect" layoutX="133.0" layoutY="355.0" prefHeight="18.0" prefWidth="319.0" textFill="#5b1010" />
+      <PasswordField fx:id="passfield" layoutX="205.0" layoutY="170.0" onAction="#passfieldOnActn" prefHeight="26.0" prefWidth="200.0" promptText="Enter your password" />
+   </children>
+</AnchorPane>

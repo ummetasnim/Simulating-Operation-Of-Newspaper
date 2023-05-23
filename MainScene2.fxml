@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="486.0" prefWidth="732.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="simulatingnewspaper.MainScene2Controller">
+   <children>
+      <Label layoutX="92.0" layoutY="60.0" prefHeight="57.0" prefWidth="608.0" text="Welcome to our apps !! Fill the Form And Signup if you are a new User :)" textFill="#5b1313">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="104.0" layoutY="145.0" prefHeight="26.0" prefWidth="146.0" text="Name :" textFill="#560f0f">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="104.0" layoutY="207.0" prefHeight="26.0" prefWidth="146.0" text="Contact Number :" textFill="#560d0d">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="104.0" layoutY="272.0" prefHeight="26.0" prefWidth="120.0" text="Date Of Birth:" textFill="#661313">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="104.0" layoutY="340.0" prefHeight="26.0" prefWidth="110.0" text="User Type :" textFill="#5e1111">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <DatePicker fx:id="birthdatefld" layoutX="252.0" layoutY="272.0" prefHeight="26.0" prefWidth="275.0" promptText="BirthDate" />
+      <TextField fx:id="numbtxtfld" layoutX="251.0" layoutY="208.0" prefHeight="26.0" prefWidth="275.0" promptText="Contact Number" />
+      <TextField fx:id="nametxtfld" layoutX="251.0" layoutY="146.0" prefHeight="26.0" prefWidth="275.0" promptText="Full Name" />
+      <TextField fx:id="typefld" layoutX="251.0" layoutY="341.0" prefHeight="26.0" prefWidth="275.0" promptText="Type" />
+      <Label fx:id="notify" layoutX="88.0" layoutY="436.0" prefHeight="26.0" prefWidth="608.0" textFill="#5b1111">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Button fx:id="signuptxtfld" layoutX="542.0" layoutY="394.0" mnemonicParsing="false" onAction="#signupbtnOnActn" prefHeight="26.0" prefWidth="146.0" text="Sign Up" textFill="#4e0e0e" />
+   </children>
+</AnchorPane>

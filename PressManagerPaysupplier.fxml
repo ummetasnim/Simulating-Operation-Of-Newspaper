@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="simulatingnewspaper.PressManagerPaysupplierController">
+   <children>
+      <Label layoutX="73.0" layoutY="76.0" prefHeight="34.0" prefWidth="142.0" text="Name of Supplier : " textFill="#6b1b1b" />
+      <Label layoutX="72.0" layoutY="145.0" prefHeight="26.0" prefWidth="142.0" text="Ammount : " textFill="#7e2525" />
+      <Button fx:id="sentbutton" layoutX="238.0" layoutY="285.0" mnemonicParsing="false" onAction="#requestbtn" prefHeight="34.0" prefWidth="182.0" text="Sent Request" textFill="#5e1818" />
+      <Button layoutX="431.0" layoutY="285.0" mnemonicParsing="false" onAction="#prevscenebtn" prefHeight="34.0" prefWidth="162.0" text="Prev Scene" textFill="#611616" />
+      <TextField fx:id="nameTxtField" layoutX="238.0" layoutY="80.0" prefHeight="26.0" prefWidth="228.0" promptText="enter supplier name" />
+      <TextField fx:id="ammountTxtField" layoutX="238.0" layoutY="145.0" prefHeight="26.0" prefWidth="228.0" promptText="enter ammount" />
+      <TextField fx:id="bankidTxtField" layoutX="238.0" layoutY="207.0" prefHeight="26.0" prefWidth="228.0" promptText="enter bank id" />
+      <Label layoutX="71.0" layoutY="204.0" prefHeight="34.0" prefWidth="142.0" text="Trax id : " textFill="#6e1f1f" />
+   </children>
+</AnchorPane>

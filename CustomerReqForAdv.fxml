@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="526.0" prefWidth="682.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="simulatingnewspaper.CustomerReqForAdvController">
+   <children>
+      <Label layoutX="75.0" layoutY="33.0" prefHeight="34.0" prefWidth="323.0" text="Tell us what you wanna give for Advertisement -" textFill="#6b1111">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="advtxtarea" layoutX="75.0" layoutY="83.0" prefHeight="179.0" prefWidth="575.0" />
+      <Button fx:id="sendadv" layoutX="325.0" layoutY="291.0" mnemonicParsing="false" onAction="#SentOnclck" prefHeight="26.0" prefWidth="171.0" text="Send" textFill="#5e1515" />
+      <Button layoutX="518.0" layoutY="291.0" mnemonicParsing="false" onAction="#PrevsceneOnclck" prefHeight="26.0" prefWidth="138.0" text="Prev Scene" textFill="#6b1d1d" />
+      <TextArea fx:id="outputtxtArea" editable="false" layoutX="74.0" layoutY="426.0" prefHeight="66.0" prefWidth="575.0" />
+      <Button fx:id="showStatusbtn" layoutX="75.0" layoutY="373.0" mnemonicParsing="false" onAction="#showStatusbtnclckOnActn" prefHeight="26.0" prefWidth="323.0" text="Click to See Your Adv Status" textFill="#6e1717" />
+   </children>
+</AnchorPane>
